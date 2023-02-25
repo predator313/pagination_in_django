@@ -7,6 +7,15 @@
     <title>Home</title>
 </head>
 <body>
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil earum voluptate doloribus ipsum vel repellat cum reprehenderit natus amet non minus dolor animi modi tenetur possimus laborum quam deleniti adipisci, et, quo quia perspiciatis fuga minima libero! Dolorum ipsum architecto natus, corporis perspiciatis, tempore quaerat eveniet praesentium modi culpa nemo sit at ex quia! Eveniet facilis laudantium, ut deserunt iure harum obcaecati corrupti fuga doloremque possimus sunt illo molestiae error architecto ad repellat alias reiciendis quidem ipsum aut accusantium velit perspiciatis explicabo soluta. Ex in, sapiente, laboriosam a sequi consequatur, molestiae fuga sed harum iste minus possimus excepturi maxime blanditiis.
+  
+  {% for post in posts %}
+    <hr>
+    {{post.id}}
+    {{post.desc}}
+    {{post.publish_date}}
+    <hr>
+
+  {% endfor %}
+    
 </body>
 </html>
