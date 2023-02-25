@@ -19,5 +19,6 @@ from myapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.post_list,name='home'),
+    path('',views.PostListView.as_view(),name='home'),
+    # path('',views.post_list,name='home'),
 ]

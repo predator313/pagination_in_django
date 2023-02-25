@@ -7,8 +7,8 @@
     <title>Home</title>
 </head>
 <body>
-  
-  {% for post in posts %}
+  {% comment %} we need to use page_obj otherwise we will get an error {% endcomment %}
+  {% for post in page_obj %}
     <hr>
     {{post.id}}<br>
     {{post.title}}<br>
